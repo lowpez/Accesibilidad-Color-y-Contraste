@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-CL" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blob UI - Accesibilidad: Contraste y Colores</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style type="text/css">
+    body {
+      transition: 0.5s;
+      background: #FFEC8B;
+      height:100vh;
+      margin: 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
+    button{
+      font-family:'Helvetica', sans-serif;
+      border: none;
+      background: #000;
+      color: #FFF;
+      width: auto;
+      padding: 1.61rem 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+    .modo-luna {
+      color: #EB4C49;
+      background: #2F3277;
+    }
+  </style>  
+</head>
+<body>
+
+  <button onclick="toggleLook()">Modo</button>
+  <h1>Día / Noche</h1>
+  <script>
+   const body = document.body;
+   if (localStorage.mode === 'dark') {
+    body.classList.add("modo-luna")
+  };
+
+  function toggleLook() {
+    body.classList.toggle("modo-luna");
+    localStorage.setItem(
+      'mode', localStorage.mode === 'light' || localStorage.mode === undefined ? 'dark' : 'light'
+      );
+  }
+</script>
+</body>
+</html>
