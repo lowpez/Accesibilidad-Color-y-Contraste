@@ -36,9 +36,10 @@
   </style>  
 </head>
 <body>
-
-  <button onclick="toggleLook()">Modo</button>
+<main>
+  <button aria-label="Contraste" role="switch" onclick="toggleLook()">Modo</button>
   <h1>Día / Noche</h1>
+</main>
   <script>
    const body = document.body;
    if (localStorage.mode === 'dark') {
