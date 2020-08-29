@@ -4,6 +4,8 @@
 Un simple script para integrar un modo día/noche ó Alto/bajo contraste 
 a todo website de forma nativa.
 
+[Demo](https://codepen.io/lowpez/pen/gOrRMXb).
+
 ## Tecnologias
 * HTML5
 * JS
@@ -11,7 +13,7 @@ a todo website de forma nativa.
 
 ## Uso
 
-Tan simple como llamar la funcion *toggleLook()* desde algun elemento.
+Tan simple como llamar la funcion **toggleLook()** desde algún elemento.
 ```
 onclick="toggleLook()"
 ```
