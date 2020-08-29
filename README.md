@@ -17,4 +17,4 @@ Tan simple como llamar la funcion **toggleLook()** desde algún elemento.
 ```
 onclick="toggleLook()"
 ```
-Proyecto inspirado por el trabajo de @Tiago Porto [accessibility-buttons](https://github.com/tiagoporto/accessibility-buttons).
+Proyecto inspirado por el trabajo de @TiagoPorto en [accessibility-buttons](https://github.com/tiagoporto/accessibility-buttons).
