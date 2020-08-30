@@ -28,15 +28,30 @@
       letter-spacing: 2px;
       font-weight: 600;
     }
+
     .modo-luna {
       color: #EB4C49;
       background: #2F3277;
     }
+    
+    .modo-luna  span {
+      visibility: hidden;
+      position: relative;
+      display: inline-block;
+    }
+
+    .modo-luna span:after {
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "\274D";
+  }
   </style>  
 </head>
 <body>
 <main>
-  <button aria-label="Contraste" role="switch" onclick="toggleLook()">Modo</button>
+  <button aria-label="Contraste" role="switch" onclick="toggleLook()">Modo <span>&#9728;</span></button>
   <h1>Día / Noche</h1>
 </main>
   <script>
